@@ -1,14 +1,24 @@
 <div align="center">
 
-# 🎓 Classroom of the Elite  
-## **Student Evaluation System (FastAPI Backend)**
+<h1>🎓 Classroom of the Elite</h1>
 
-⚡ *An async, validation-heavy FastAPI project inspired by the elite academic evaluation system*  
+<h3>Student Evaluation System (FastAPI Backend)</h3>
 
-![Python](https://img.shields.io/badge/Python-3.11+-blue?style=flat-square)
-![FastAPI](https://img.shields.io/badge/FastAPI-async-green?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
+<p>
+  <em>An async, validation-heavy FastAPI project inspired by the Tokyo Metropolitan Advanced Nurturing High School.</em>
+</p>
+
+<p>
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  </a>
+  <a href="https://fastapi.tiangolo.com/">
+    <img src="https://img.shields.io/badge/FastAPI-Async-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+  </a>
+  <a href="https://docs.pydantic.dev/">
+    <img src="https://img.shields.io/badge/Pydantic-v2-E92063?style=for-the-badge&logo=pydantic&logoColor=white" />
+  </a>
+</p>
 
 </div>
 
@@ -16,42 +26,63 @@
 
 ## 🧠 Overview
 
-**Classroom of the Elite – Student Evaluation API** is a backend-focused FastAPI project that simulates  
-how students are **created, evaluated, ranked, and expelled** in an elite academic environment.
+**Classroom of the Elite – Student Evaluation API** is a high-performance backend system designed to simulate the ruthless academic environment where students are **created, evaluated, ranked, and expelled**.
 
-The goal of this project is **not UI**, but to showcase **clean backend engineering**:
-- strong validation
-- async behavior
-- background tasks
-- structured code
+Unlike typical CRUD apps, this project focuses on **backend engineering excellence**:
+> *"True ability is not just about passing exams; it's about structure, validation, and execution."*
+
+This system handles asynchronous data processing, strict schema validation, and background tasks to determine which students survive the semester.
 
 ---
 
 ## ✨ Key Highlights
 
-✔️ Clean RESTful API design  
-✔️ Strong request & response validation (Pydantic v2)  
-✔️ Fully asynchronous FastAPI routes  
-✔️ Async file-based persistence (`aiofiles`)  
-✔️ Background evaluation tasks (non-blocking)  
-✔️ Auto-generated Swagger documentation  
-✔️ Production-style folder structure  
+| Feature | Description |
+| :--- | :--- |
+| **Clean Architecture** | Modular, production-ready folder structure. |
+| **Strict Validation** | Powered by **Pydantic v2** to ensure data integrity. |
+| **Async Core** | Fully asynchronous routes and file I/O using `aiofiles`. |
+| **Background Tasks** | Non-blocking evaluation algorithms for student ranking. |
+| **Auto-Docs** | Interactive Swagger UI & ReDoc integration. |
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-----|-----------|
-| Language | 🐍 Python 3.11+ |
-| Framework | ⚡ FastAPI |
-| Validation | 📦 Pydantic v2 |
-| Server | 🚀 Uvicorn |
-| Async I/O | 📂 aiofiles |
-| Concurrency | 🔁 asyncio |
-| Docs | 📘 Swagger UI |
+<div align="center">
+
+| Component | Technology | Description |
+| :--- | :--- | :--- |
+| **Language** | 🐍 Python 3.11+ | Modern type-hinting support |
+| **Framework** | ⚡ FastAPI | High-performance async framework |
+| **Validation** | 📦 Pydantic v2 | Data parsing and validation |
+| **Server** | 🚀 Uvicorn | ASGI Web Server implementation |
+| **Concurrency** | 🔁 asyncio | Native Python async support |
+| **Persistence** | 📂 aiofiles | Asynchronous file handling |
+
+</div>
 
 ---
 
 ## 🗂️ Project Structure
 
+The codebase follows a scalable domain-driven design.
+
+```text
+📂 classroom-elite-backend/
+├── 📂 app/
+│   ├── 📂 api/
+│   │   ├── 📂 v1/
+│   │   │   ├── 📄 students.py      # Student CRUD & Ranking endpoints
+│   │   │   └── 📄 evaluations.py   # Background task triggers
+│   │   └── 📄 router.py            # Main API router aggregator
+│   ├── 📂 core/
+│   │   ├── 📄 config.py            # Environment variables & settings
+│   │   └── 📄 exceptions.py        # Custom exception handlers
+│   ├── 📂 models/                  # Internal data structures
+│   ├── 📂 schemas/                 # Pydantic schemas (Request/Response)
+│   ├── 📂 services/                # Business logic (Evaluation algorithms)
+│   └── 📄 main.py                  # Application entry point
+├── 📂 data/                        # JSON/File persistence storage
+├── 📄 requirements.txt             # Project dependencies
+└── 📄 README.md                    # System documentation

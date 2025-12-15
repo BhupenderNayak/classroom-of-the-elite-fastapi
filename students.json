@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Aynakoji Kyotaka",
+    "class_section": "D",
+    "score": 100,
+    "id": 1,
+    "is_expelled": false
+  },
+  {
+    "name": "PHJMVczsxVCZBZOgdzmTiTwAkgaqazyaGtbDqTTZFLkgQloQWc",
+    "class_section": "A",
+    "score": 100,
+    "id": 2,
+    "is_expelled": true
+  },
+  {
+    "name": "Kei Karuizawa",
+    "class_section": "D",
+    "score": 69,
+    "id": 3,
+    "is_expelled": true
+  }
+]

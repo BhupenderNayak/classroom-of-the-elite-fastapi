@@ -1,0 +1,57 @@
+<div align="center">
+
+# 🎓 Classroom of the Elite  
+## **Student Evaluation System (FastAPI Backend)**
+
+⚡ *An async, validation-heavy FastAPI project inspired by the elite academic evaluation system*  
+
+![Python](https://img.shields.io/badge/Python-3.11+-blue?style=flat-square)
+![FastAPI](https://img.shields.io/badge/FastAPI-async-green?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
+
+</div>
+
+---
+
+## 🧠 Overview
+
+**Classroom of the Elite – Student Evaluation API** is a backend-focused FastAPI project that simulates  
+how students are **created, evaluated, ranked, and expelled** in an elite academic environment.
+
+The goal of this project is **not UI**, but to showcase **clean backend engineering**:
+- strong validation
+- async behavior
+- background tasks
+- structured code
+
+---
+
+## ✨ Key Highlights
+
+✔️ Clean RESTful API design  
+✔️ Strong request & response validation (Pydantic v2)  
+✔️ Fully asynchronous FastAPI routes  
+✔️ Async file-based persistence (`aiofiles`)  
+✔️ Background evaluation tasks (non-blocking)  
+✔️ Auto-generated Swagger documentation  
+✔️ Production-style folder structure  
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-----|-----------|
+| Language | 🐍 Python 3.11+ |
+| Framework | ⚡ FastAPI |
+| Validation | 📦 Pydantic v2 |
+| Server | 🚀 Uvicorn |
+| Async I/O | 📂 aiofiles |
+| Concurrency | 🔁 asyncio |
+| Docs | 📘 Swagger UI |
+
+---
+
+## 🗂️ Project Structure
+
